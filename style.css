@@ -1,0 +1,174 @@
+/* ====== RESET DAN DASAR ====== */
+body {
+  background: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* ====== KONTEN UTAMA ====== */
+.container {
+  max-width: 480px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 24px 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  /* Animasi masuk dari bawah ke atas */
+  animation: fadeInUp 0.8s ease;
+  position: relative;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Animasi fade in up untuk container */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== JUDUL DAN DESKRIPSI ====== */
+h1 {
+  font-size: 1.3em;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.desc {
+  font-size: 1em;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+/* ====== TABEL ====== */
+table {
+  width: 100%;
+  margin: 0 auto 18px auto;
+  border-collapse: collapse;
+  font-size: 0.98em;
+}
+
+th, td {
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  text-align: left;
+  padding: 8px 10px;
+}
+
+th {
+  background-color: #e0d3b8;
+}
+
+/* ====== CONTOH DAN TOMBOL ====== */
+.contoh {
+  text-align: center;
+}
+
+/* Tombol dengan transisi */
+.btn-rectangle {
+  background-color: #4CAF50;      /* warna awal hijau */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 8px;
+}
+
+/* Hover: warna lebih gelap & membesar */
+.btn-rectangle:hover {
+  background-color: #4a6a00;
+  transform: scale(1.15);
+}
+
+/* Active: warna biru saat diklik */
+.btn-rectangle:active {
+  background-color: #007BFF;
+}
+
+/* ====== INPUT DENGAN PSEUDO-CLASS ====== */
+.text-pseudo {
+  width: 250px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  margin-top: 8px;
+}
+
+/* Fokus: border dan background berubah */
+.text-pseudo:focus {
+  border-color: #007BFF;
+  background-color: #E6F0FF;
+  outline: none;
+}
+
+/* ====== LINK CONTOH (bisa diganti ke a jika perlu) ====== */
+b {
+  color: #007BFF;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+b:hover {
+  color: #4CAF50;
+}
+
+b:visited {
+  color: #800080;
+}
+
+b:active {
+  color: #FF5722;
+}
+
+/* ====== ANIMASI CONTOH KEYFRAME UNTUK HALAMAN KEYFRAME ====== */
+@keyframes contohKeyframe {
+  0%   { transform: translateY(0);    opacity: 0.7; }
+  50%  { transform: translateY(-30px); opacity: 1; }
+  100% { transform: translateY(0);    opacity: 0.7; }
+}
+
+/* ====== ANIMASI LOOPING DEMO ====== */
+.looping-demo {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: #ff9800;
+  border-radius: 50%;
+  margin: 10px auto;
+  animation: loopingAnim 1s infinite alternate;
+}
+
+@keyframes loopingAnim {
+  from { transform: scale(1) rotate(0deg); opacity: 0.7; }
+  to   { transform: scale(1.3) rotate(360deg); opacity: 1; }
+}
+
+/* ====== DEMO TRANSFORMASI ====== */
+.transformasi-demo {
+  display: inline-block;
+  background: #2196f3;
+  color: #fff;
+  padding: 18px 32px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  margin: 10px auto;
+  transition: 
+    transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.3s;
+  cursor: pointer;
+}
+
+/* Hover: kombinasi scale, rotate, dan translate */
+.transformasi-demo:hover {
+  background: #4CAF50;
+  transform: scale(1.2) rotate(-10deg) translateY(-20px);
+}

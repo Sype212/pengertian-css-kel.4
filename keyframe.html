@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe Animation CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Keyframe Animation CSS</h1>
+        <p class="desc">
+            <strong>Keyframe</strong> pada CSS adalah teknik untuk membuat animasi dengan menentukan beberapa titik perubahan (keyframes) pada elemen. Dengan <code>@keyframes</code>, kita bisa mengatur perubahan properti CSS secara bertahap dari awal hingga akhir animasi.<br>
+            Animasi dengan keyframe dapat berjalan otomatis, diulang-ulang, atau hanya sekali saja.
+        </p>
+        <table>
+            <tr>
+                <th>Properti Animasi</th>
+                <th>Penjelasan</th>
+            </tr>
+            <tr>
+                <td><code>@keyframes</code></td>
+                <td>Mendefinisikan langkah-langkah perubahan animasi.</td>
+            </tr>
+            <tr>
+                <td><code>animation-name</code></td>
+                <td>Nama animasi yang akan digunakan.</td>
+            </tr>
+            <tr>
+                <td><code>animation-duration</code></td>
+                <td>Lama waktu animasi berlangsung.</td>
+            </tr>
+            <tr>
+                <td><code>animation-iteration-count</code></td>
+                <td>Jumlah pengulangan animasi (misal: <code>infinite</code>).</td>
+            </tr>
+            <tr>
+                <td><code>animation-delay</code></td>
+                <td>Waktu tunda sebelum animasi dimulai.</td>
+            </tr>
+            <tr>
+                <td><code>animation</code></td>
+                <td>Shorthand untuk semua properti animasi di atas.</td>
+            </tr>
+        </table>
+        <div class="contoh">
+            <p><strong>Contoh Animasi Keyframe:</strong></p>
+            <div style="display:inline-block;">
+                <div style="
+                    width:60px;
+                    height:60px;
+                    background:#4CAF50;
+                    border-radius:50%;
+                    animation: contohKeyframe 1.2s infinite alternate;
+                    margin: 10px auto;">
+                </div>
+            </div>
+            <br><br>
+            <a href="Transition.html" class="btn-rectangle" style="margin-right:8px;">Sebelumnya</a>
+            <a href="looping.html" class="btn-rectangle">Next</a>
+        </div>
+    </div>
+</body>
+</html>
